@@ -1,0 +1,11 @@
+.shipping-workshop-other-value input {
+	width: 50%;
+}
+.components-radio-control__label {
+	position: static !important;
+}
+.components-radio-control .components-base-control__label,.components-select-control .components-input-control__label {
+	position: static !important;
+	margin: 15px 0 !important;
+	font-weight: 600 !important;
+}

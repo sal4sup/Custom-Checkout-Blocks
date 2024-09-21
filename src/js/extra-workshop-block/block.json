@@ -1,0 +1,44 @@
+{
+  "apiVersion": 2,
+  "name": "extra-workshop/extra-workshop-block",
+  "version": "2.0.0",
+  "title": "Printing Block",
+  "category": "woocommerce",
+  "description": "Adds a custom field for T-shirt printing in the checkout.",
+  "supports": {
+	"html": false,
+	"align": false,
+	"multiple": false,
+	"reusable": false
+  },
+  "parent": [
+	"woocommerce/checkout-shipping-address-block"
+  ],
+  "attributes": {
+	"lock": {
+	  "type": "object",
+	  "default": {
+		"remove": true,
+		"move": true
+	  }
+	},
+	"text": {
+	  "type": "string",
+	  "default": ""
+	},
+	"tshirtDesc": {
+	  "type": "string",
+	  "default": ""
+	},
+	"tshirtSize": {
+	  "type": "string",
+	  "default": ""
+	},
+	"tshirtColor": {
+	  "type": "object",
+	  "default": ""
+	}
+  },
+  "textdomain": "shipping-workshop",
+  "editorStyle": "file:../../../build/style-shipping-workshop-block.css"
+}
